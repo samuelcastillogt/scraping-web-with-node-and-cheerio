@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de Analisis de <%= datos.title %></title>
+</head>
+<body>
+    <p>Los H1 son:</p>
+    <% datos.h1.map(item =>{ %>
+        <li class="card-title"><%= item %></li>
+        <% }) %>
+
+      <p>Los H2 son:</p>  
+    <% datos.h2.map(item =>{ %>
+        <li class="card-title"><%= item %></li>
+        <% }) %>
+        <p>Las Negritas o Stronges son:</p>
+        <% datos.Negritas.map(item =>{ %>
+            <li class="card-title"><%= item %></li>
+            <% }) %>
+            <a href="/">Nuevo analisis</a>
+</body>
+</html>
